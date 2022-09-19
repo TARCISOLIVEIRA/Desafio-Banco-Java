@@ -8,14 +8,17 @@
  * @author NevesRibeiro
  */
 public class ContaCorrente extends Conta {
-    
-    private static int SEQUENCIAL = 1;
 
-    public ContaCorrente() {
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("===Extrato de Conta Corrente====");
+        System.out.println(String.format("Agencia: %d", super.agencia));
+        System.out.println(String.format("Numero: %d", super.numero));
+        System.out.println(String.format("Saldo:  %.2f", super.saldo));
         
-        super.agencia = 1;
-        super.numero = SEQUENCIAL++;
     }
+    
+  
    
 
 }

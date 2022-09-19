@@ -9,4 +9,14 @@
  */
 public class principal {
     
+ public static void main(String[]arg){
+     
+     Conta cc = new ContaCorrente();
+     Conta poupanca = new Poupanca();
+     
+ }
+       
+            
+           
+      
 }

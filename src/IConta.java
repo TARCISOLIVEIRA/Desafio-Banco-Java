@@ -16,6 +16,8 @@
         
     
       void transferir(double valor, Conta contaDestino);
+      
+      void imprimirExtrato();
        
    
     
