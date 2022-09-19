@@ -7,10 +7,10 @@
  *
  * @author NevesRibeiro
  */
-public class Conta {
-    private int agencia;
-    private int numero;
-    private double saldo;
+public abstract class Conta implements IConta {
+    protected int agencia;
+    protected int numero;
+    protected double saldo;
 
     public int getAgencia() {
         return agencia;
@@ -23,14 +23,19 @@ public class Conta {
     public double getSaldo() {
         return saldo;
     }
-    
-    public void sacar (){
-    
-}
-    public void depositar(){
-        
+
+    @Override
+    public void sacar(double valor) {
     }
-    Public void transferir(){
-        
-     
+
+    @Override
+    public void depositar(double valor) {
+    }
+
+    @Override
+    public void transferir(double valor, Conta contaDestino) {
+    }
+    
+
 }
+ 
