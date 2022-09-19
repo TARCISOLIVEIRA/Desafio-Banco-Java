@@ -7,15 +7,6 @@
  *
  * @author NevesRibeiro
  */
-public class ContaCorrente extends Conta {
+public class principal {
     
-    private static int SEQUENCIAL = 1;
-
-    public ContaCorrente() {
-        
-        super.agencia = 1;
-        super.numero = SEQUENCIAL++;
-    }
-   
-
 }
