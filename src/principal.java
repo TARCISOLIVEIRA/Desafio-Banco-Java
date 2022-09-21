@@ -11,9 +11,18 @@ public class principal {
     
  public static void main(String[]arg){
      
-     Conta cc = new ContaCorrente();
-     Conta poupanca = new Poupanca();
+     Cliente Tarciso = new Cliente ();
+     Tarciso.setNome("Tarciso dos Santos");
      
+     Conta cc = new ContaCorrente(Tarciso);
+     Conta poupanca = new Poupanca(Tarciso);
+     
+     cc.depositar(100);
+     
+     cc.transferir(100, poupanca);
+     
+     cc.imprimirExtrato();
+     poupanca.imprimirExtrato();
  }
        
             
